@@ -46,7 +46,7 @@ AppAsset::register($this);
     <?php $this->beginBody() ?>
         <?= $this->render('header.php') ?>
 
-        <?= $this->render('content.php') ?>
+        <?= $content ?>
 
         <?= $this->render('sidebar.php') ?>
 
