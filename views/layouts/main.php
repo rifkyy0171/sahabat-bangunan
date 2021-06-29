@@ -5,9 +5,6 @@
 
 use app\widgets\Alert;
 use yii\helpers\Html;
-use app\assets\AppAsset;
-
-AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -42,15 +39,17 @@ AppAsset::register($this);
 
     <?php $this->head() ?>
 </head>
-<body>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
     <?php $this->beginBody() ?>
         <?= $this->render('header.php') ?>
 
-        <?= $content ?>
-
         <?= $this->render('sidebar.php') ?>
 
+        <?= $content ?>
+
     <?php $this->endBody() ?>
+</div>
 </body>
 </html>
     <?php $this->endPage() ?>
@@ -87,6 +86,6 @@ AppAsset::register($this);
 <!-- AdminLTE App -->
 <script src="vendor/almasaeed2010/adminlte/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="vendor/almasaeed2010/adminlte/dist/js/demo.js"></script>
+<!-- <script src="vendor/almasaeed2010/adminlte/dist/js/demo.js"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="vendor/almasaeed2010/adminlte/dist/js/pages/dashboard.js"></script>
+<!-- <script src="vendor/almasaeed2010/adminlte/dist/js/pages/dashboard.js"></script> -->

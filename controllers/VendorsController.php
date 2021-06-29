@@ -3,8 +3,8 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Vendor;
-use app\models\VendorSearch;
+use app\models\Vendors;
+use app\models\VendorsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * VendorController implements the CRUD actions for Vendor model.
  */
-class VendorController extends Controller
+class VendorsController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -35,7 +35,7 @@ class VendorController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new VendorSearch();
+        $searchModel = new VendorsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -64,7 +64,7 @@ class VendorController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Vendor();
+        $model = new Vendors();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id_vendor]);
@@ -118,7 +118,7 @@ class VendorController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = Vendor::findOne($id)) !== null) {
+        if (($model = Vendors::findOne($id)) !== null) {
             return $model;
         }
 

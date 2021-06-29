@@ -5,31 +5,33 @@ use yii\grid\GridView;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\PelangganSearch */
+/* @var $searchModel app\models\VendorSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Pelanggans';
+$this->title = 'Vendors';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="pelanggan-index">
+<div class="vendor-index">
 
-    <p>
-        <?= Html::a('Create Pelanggan', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+   
+
+    <!-- <p>
+        <?= Html::a('Create Vendor', ['create'], ['class' => 'btn btn-success']) ?>
+    </p> -->
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-<div class="content-wrapper">
+    <div class="content-wrapper">
 <section class="content-header">
   <div class="container-fluid">
     <div class="row mb-2">
       <div class="col-sm-6">
-        <h1>Pelanggan</h1>
+        <h1>Vendor</h1>
       </div>
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
           <li class="breadcrumb-item"><a href="<?= Url::base() ?>">Home</a></li>
-          <li class="breadcrumb-item active">Data Pelanggan</li>
+          <li class="breadcrumb-item active">Data Vendor</li>
         </ol>
       </div>
     </div>
@@ -45,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
               <thead>
                 <tr>
                   <th style="width: 10px">#</th>
-                  <th>Nama Pelanggan</th>
+                  <th>Nama Vendor</th>
                   <th>Telpon</th>
                   <th>Alamat</th>
                 </tr>
@@ -55,10 +57,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     foreach($dataProvider->models as $data){
                 ?>
                 <tr>
-                  <td><?= $data->id_pelanggan ?></td>
-                  <td><?= $data->nama_pelanggan ?></td>
-                  <td><?= $data->telp_pelanggan ?></td>
-                  <td><?= $data->alamat_pelanggan ?></td>
+                  <td><?= $data->id_vendor ?></td>
+                  <td><?= $data->nama_vendor ?></td>
+                  <td><?= $data->telp_vendor ?></td>
+                  <td><?= $data->alamat_vendor ?></td>
                 </tr>
                 <?php } ?>
               </tbody>

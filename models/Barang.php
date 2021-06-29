@@ -41,8 +41,8 @@ class Barang extends \yii\db\ActiveRecord
             [['id_kategori', 'stok'], 'integer'],
             [['deskripsi'], 'string'],
             [['harga_beli', 'harga_jual'], 'number'],
-            [['nama_barang'], 'string', 'max' => 30],
-            [['satuan'], 'string', 'max' => 10],
+            [['nama_barang'], 'string', 'max' => 50],
+            [['satuan'], 'string', 'max' => 20],
             [['gambar'], 'string', 'max' => 200],
             [['id_kategori'], 'exist', 'skipOnError' => true, 'targetClass' => Kategori::className(), 'targetAttribute' => ['id_kategori' => 'id_kategori']],
         ];

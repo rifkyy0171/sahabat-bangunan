@@ -14,7 +14,7 @@ use Yii;
  *
  * @property Penerimaan[] $penerimaans
  */
-class Vendor extends \yii\db\ActiveRecord
+class Vendors extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}

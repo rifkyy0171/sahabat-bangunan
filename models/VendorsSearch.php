@@ -4,12 +4,12 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Vendor;
+use app\models\Vendors;
 
 /**
  * VendorSearch represents the model behind the search form of `app\models\Vendor`.
  */
-class VendorSearch extends Vendor
+class VendorsSearch extends Vendors
 {
     /**
      * {@inheritdoc}
@@ -40,7 +40,7 @@ class VendorSearch extends Vendor
      */
     public function search($params)
     {
-        $query = Vendor::find();
+        $query = Vendors::find();
 
         // add conditions that should always apply here
 
