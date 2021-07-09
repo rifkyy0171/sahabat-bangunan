@@ -13,13 +13,12 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="pelanggan-index">
 
-    <p>
+    <!-- <p>
         <?= Html::a('Create Pelanggan', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    </p> -->
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-<div class="content-wrapper">
 <section class="content-header">
   <div class="container-fluid">
     <div class="row mb-2">
@@ -69,7 +68,4 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
   </div>
 </section>
-</div>
-
-
 </div>

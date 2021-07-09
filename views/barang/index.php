@@ -19,12 +19,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-<div class="content-wrapper">
 <section class="content-header">
   <div class="container-fluid">
     <div class="row mb-2">
       <div class="col-sm-6">
-        <h1>Kategori</h1>
+        <h1>Barang</h1>
       </div>
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
@@ -79,6 +78,5 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
   </div>
 </section>
-</div>
 </div>
 
